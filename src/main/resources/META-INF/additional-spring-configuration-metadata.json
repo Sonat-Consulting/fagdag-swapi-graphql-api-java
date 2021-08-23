@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "swapi.films",
+      "type": "java.lang.String",
+      "description": "Description for swapi.films."
+  }
+] }

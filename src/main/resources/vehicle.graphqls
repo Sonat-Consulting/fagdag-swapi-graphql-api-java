@@ -1,0 +1,17 @@
+type Vehicle {
+    name: String
+    model: String
+    starshipClass: String
+    manufacturer: String
+    costInCredits: String
+    length: String
+    crew: String
+    passengers: String
+    maxAtmospheringSpeed: String
+    hyperdriveRating: String
+    MGLT: String
+    cargo_capacity: String
+    consumables: String
+    films : String
+    pilots : String
+}

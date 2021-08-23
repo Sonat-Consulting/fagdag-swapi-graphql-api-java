@@ -1,0 +1,9 @@
+# Vehicle with properties
+{
+  vehicle(id: 8) {
+      name
+      passengers
+      cargo_capacity
+      maxAtmospheringSpeed
+  }
+}

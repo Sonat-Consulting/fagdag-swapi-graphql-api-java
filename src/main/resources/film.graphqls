@@ -1,0 +1,10 @@
+type Film {
+    episodeId: ID!
+    title: String
+    openingCrawl: String
+    director: String
+    producer: String
+    releaseDate: String
+    vehicle: [Vehicle!]
+    reviews: [Review!]
+}

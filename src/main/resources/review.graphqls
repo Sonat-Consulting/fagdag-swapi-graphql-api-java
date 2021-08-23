@@ -1,0 +1,8 @@
+type Mutation {
+    createReview(id: ID!):Review
+}
+type Review {
+    id: ID!
+    username: String!
+    rating: ID!
+}

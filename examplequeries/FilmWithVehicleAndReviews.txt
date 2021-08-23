@@ -1,0 +1,21 @@
+# Film with vehicle and reviews
+{
+  film(id: 4) {
+    episodeId,
+    title,
+    openingCrawl,
+    director,
+    producer,
+    releaseDate,
+    vehicle {
+      name
+      passengers
+      cargo_capacity
+      maxAtmospheringSpeed
+      }
+    reviews {
+      username
+      rating
+    }
+  }
+}

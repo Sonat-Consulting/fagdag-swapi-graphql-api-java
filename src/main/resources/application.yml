@@ -1,0 +1,56 @@
+swapi:
+  films: https://swapi.dev/api/films/%d/
+spring:
+  application:
+    name: graphql-todo-app
+  servlet:
+    multipart:
+      enabled: true
+      location: /tmp
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+graphql:
+  servlet:
+    actuator-metrics: true
+    async-timeout: 1000
+    enabled: true
+    mapping: /graphql
+  playground:
+    mapping: /playground
+    endpoint: /graphql
+    enabled: true
+    cdn:
+      enabled: false
+      version: latest
+  altair:
+    enabled: true
+    cdn:
+      enabled: false
+      version: 4.0.2
+    options:
+      initial-settings:
+        theme: dracula
+      endpoint-url: /graphql
+  graphiql:
+    mapping: /graphiql
+    endpoint:
+      graphql: /graphql
+      subscriptions: /subscriptions
+    subscriptions:
+      timeout: 30
+      reconnect: false
+    basePath: /
+    enabled: true
+    pageTitle: GraphiQL
+  voyager:
+    enabled: true
+    cdn:
+      enabled: true
+      version: 1.0.0-rc.31

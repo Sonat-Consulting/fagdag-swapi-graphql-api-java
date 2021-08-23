@@ -1,0 +1,6 @@
+# Write your query or mutation here
+{
+    film(id: "1") {
+        episodeId, title
+    }
+}
