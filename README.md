@@ -7,6 +7,7 @@ This GraphQL API consumes [SWAPI - The Star Wars API](https://swapi.dev/document
 ### Install following to get started
 * [Java SE Development Kit 8u301](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 * [Maven](https://maven.apache.org/)
+* [Gradle](https://gradle.org/install/)
 
 ### Playing with the API
 * [Playground](http://localhost:9000/playground)
