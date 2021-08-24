@@ -11,6 +11,7 @@ _Set enviorment variables per instructions for your operating system._
 * [Java SE Development Kit 8u301](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 * [Maven](https://maven.apache.org/)
 * [Gradle](https://gradle.org/install/)
+* [IntelliJ Plugin for GraphQL](https://plugins.jetbrains.com/plugin/8097-js-graphql)
 
 ### Playing with the API
 _Open these in your favourite browser after running the project._
