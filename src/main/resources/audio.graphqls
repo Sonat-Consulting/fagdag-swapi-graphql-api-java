@@ -1,0 +1,9 @@
+"""
+Random Sound
+"""
+type Audio {
+    """
+    Information about audio
+    """
+    description: String!
+}

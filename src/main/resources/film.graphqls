@@ -1,14 +1,44 @@
+"""
+Film/episode
+"""
 type Film {
+    """
+    The ID of the episode
+    """
     episodeId: ID!
+    """
+    Title of the episode
+    """
     title: String
+    """
+    Textual representation of the episopde
+    """
     openingCrawl: String
+    """
+    Director of the episode
+    """
     director: String
+    """
+    Producer of the episode
+    """
     producer: String
+    """
+    Release date
+    """
     releaseDate: String
+    """
+    List of vehicles in the episode
+    """
     vehicle: [Vehicle!]
+    """
+    Reviews of the episode
+    """
     reviews: [Review!]
 }
 
 type Films {
+    """
+    A list of films
+    """
     film: [Film!]
 }

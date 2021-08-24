@@ -1,17 +1,65 @@
+"""
+Vehicle used in film/episode
+"""
 type Vehicle {
+    """
+    Name of vehicle
+    """
     name: String
+    """
+    Vehicle model
+    """
     model: String
+    """
+    Class of vehicle
+    """
     starshipClass: String
+    """
+    Manufacturer of vehicle
+    """
     manufacturer: String
+    """
+    Vehicle cost in credits
+    """
     costInCredits: String
+    """
+    Length in metres
+    """
     length: String
+    """
+    Number of crew members
+    """
     crew: String
+    """
+    Passenger capacity
+    """
     passengers: String
+    """
+    Maximum atmospering speed
+    """
     maxAtmospheringSpeed: String
+    """
+    Hyperdrive rating
+    """
     hyperdriveRating: String
+    """
+    Maximum number of megalights the vehicle can travel per hour
+    """
     MGLT: String
+    """
+    Maximum numbers of kilogrammes the vehicle can transfer
+    """
     cargo_capacity: String
+    """
+    Maximum length of time the spaceship can provice consumables for the entire crew without having to resupply
+    """
     consumables: String
+    """
+    List of films the vehicle has appeared in
+    """
     films : String
+    """
+    Number of pilots
+    """
     pilots : String
 }

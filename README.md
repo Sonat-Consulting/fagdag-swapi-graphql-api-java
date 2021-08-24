@@ -94,3 +94,10 @@ Add these queries to Playground after the project is up and running.
   }
 }
 ```
+
+```
+# Play and describe a sound effect
+{
+audio {description}
+}
+```

@@ -6,6 +6,8 @@ class SwapiApiApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
+
 
 }

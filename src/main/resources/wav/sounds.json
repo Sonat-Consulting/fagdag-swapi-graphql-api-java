@@ -1,0 +1,10 @@
+[
+  {
+  "path": "src/main/resources/wav/blaster-firing.wav",
+  "description": "Blaster firing"
+  },
+  {
+    "path": "src/main/resources/wav/R2D2-do.wav",
+    "description": "R2D2 says do"
+  }
+]

@@ -2,8 +2,24 @@ schema {
     query: Query
 }
 
+"""
+Root query for SWAPI
+"""
 type Query {
+    """
+    Show an film/episode based off the ID
+    """
     film(id: ID!): Film
+    """
+    Show all films/episodes
+    """
     allFilms: [Film!]
+    """
+    Show a Vehicle based off an ID
+    """
     vehicle(id: ID!): Vehicle
+    """
+    Play and show information about a random audio
+    """
+    audio: Audio
 }
