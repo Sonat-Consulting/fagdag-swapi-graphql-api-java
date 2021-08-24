@@ -4,18 +4,20 @@ import graphql.kickstart.tools.GraphQLResolver;
 import no.sonat.fagdag.graphql.swapiapi.models.*;
 import no.sonat.fagdag.graphql.swapiapi.services.FakeReviewClient;
 import no.sonat.fagdag.graphql.swapiapi.services.SwapiClient;
+import no.sonat.fagdag.graphql.swapiapi.services.SwapiClientImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.Collections.singletonList;
-
 @Component
 class FilmResolver implements GraphQLResolver<Film> {
 
     final List<Review> reviews = new ArrayList<>();
-    final SwapiClient swapiClient = new SwapiClient();
+
+    @Autowired
+    SwapiClient swapiClient;
 
     FilmResolver() {
         reviews.addAll(FakeReviewClient.getReviews());

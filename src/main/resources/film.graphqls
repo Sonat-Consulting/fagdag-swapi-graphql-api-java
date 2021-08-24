@@ -8,3 +8,7 @@ type Film {
     vehicle: [Vehicle!]
     reviews: [Review!]
 }
+
+type Films {
+    film: [Film!]
+}

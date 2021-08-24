@@ -4,5 +4,6 @@ schema {
 
 type Query {
     film(id: ID!): Film
+    allFilms: [Film!]
     vehicle(id: ID!): Vehicle
 }

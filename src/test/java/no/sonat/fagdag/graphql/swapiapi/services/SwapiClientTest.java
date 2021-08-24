@@ -4,20 +4,32 @@ import lombok.SneakyThrows;
 import no.sonat.fagdag.graphql.swapiapi.models.Film;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SwapiClientTest {
 
+    private final SwapiClientImpl swapiClientImpl = new SwapiClientImpl();
+
     @Test
     void getFilm() {
-        SwapiClient swapiClient = new SwapiClient();
-
-        Film film = swapiClient.getFilm(1L);
+        Film film = swapiClientImpl.getFilm(1L);
 
         assertNotNull(film);
         assertEquals(4, film.getEpisodeId());
 
     }
+
+    @Test
+    void getFilms() {
+        List<Film> filmList= swapiClientImpl.getFilms();
+
+        assert(filmList.size() >= 1);
+
+    }
+
+
 
     @SneakyThrows
     @Test
