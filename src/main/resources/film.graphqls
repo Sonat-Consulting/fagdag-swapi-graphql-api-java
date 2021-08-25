@@ -29,7 +29,7 @@ type Film {
     """
     List of vehicles in the episode
     """
-    vehicle: [Vehicle!]
+    vehicles: [Vehicle!]
     """
     Reviews of the episode
     """

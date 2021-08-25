@@ -1,7 +1,6 @@
 package no.sonat.fagdag.graphql.swapiapi.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import java.io.Serializable;
@@ -45,11 +44,21 @@ public class Film implements Serializable {
     @JsonProperty("starships")
     private List<String> starships;
 
-    @JsonProperty("vehicles")
-    private List<String> vehicles;
+    @JsonIgnore
+    private List<String> vehicleUris;
 
-    @JsonProperty("vehicle")
+    @JsonIgnore
     private List<Vehicle> vehicleList;
+
+    @JsonProperty("vehicles")
+    public void setVehicles(List<String> vehicleUris) {
+        this.vehicleUris = vehicleUris;
+    }
+
+    @JsonProperty("vehicles")
+    public List<Vehicle> getVehicles() {
+        return vehicleList;
+    }
 
     @JsonProperty("reviews")
     private List<Review> reviews;

@@ -17,5 +17,5 @@ type Review {
     """
     Rating given by reviewer for given episode
     """
-    rating: ID!
+    diceThrow: ID!
 }

@@ -6,7 +6,8 @@ This GraphQL API consumes [SWAPI - The Star Wars API](https://swapi.dev/document
 ./gradlew bootRun
 ```
 
-Common issues: 
+###### Common issues: 
+
 "Permission denied" on Mac, Ubuntu, etc. please run the following in terminal:
 ```
 chmod +x gradlew

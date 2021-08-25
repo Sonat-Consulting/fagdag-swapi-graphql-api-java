@@ -22,10 +22,10 @@ class FilmResolver implements GraphQLResolver<Film> {
         reviews.addAll(FakeReviewClient.getReviews());
     }
 
-    public List<Vehicle> getVehicle(Film film) {
+    public List<Vehicle> getVehicles(Film film) {
         List<Vehicle> vehicles = new ArrayList<>();
 
-        for (String vehicle:film.getVehicles()) {
+        for (String vehicle:film.getVehicleUris()) {
             Long vehicleId = Long.valueOf(vehicle.replaceAll("[^0-9]", ""));
             vehicles.add(swapiClient.getVehicle(vehicleId));
         }

@@ -10,7 +10,7 @@ class Review {
 
     private Long id;
     private String username;
-    private int rating;
+    private int diceThrow;
 
     public Review() {}
     public Review(Long id) {
