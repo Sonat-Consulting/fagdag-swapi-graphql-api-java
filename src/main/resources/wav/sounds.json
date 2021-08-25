@@ -20,14 +20,6 @@
     "description": "Yoda laughing"
   },
   {
-    "path": "src/main/resources/wav/JABBALAF.wav",
-    "description": "Jabba laughing"
-  },
-  {
-    "path": "src/main/resources/wav/sw-r2d2talk.wav",
-    "description": "R2D2 smalltalk"
-  },
-  {
     "path": "src/main/resources/wav/R2D2-yeah.wav",
     "description": "R2D2 yeah"
   }

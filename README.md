@@ -40,7 +40,7 @@ Add these queries to Playground after the project is up and running.
     title
     reviews {
       username
-      rating
+      diceThrow
     }
   }
 }
@@ -59,7 +59,7 @@ Add these queries to Playground after the project is up and running.
     releaseDate,
     reviews {
       username
-      rating
+      diceThrow
     }
   }
 }
@@ -76,7 +76,7 @@ Add these queries to Playground after the project is up and running.
     director,
     producer,
     releaseDate,
-    vehicle {
+    vehicles {
       name
       passengers
       cargo_capacity
@@ -84,7 +84,7 @@ Add these queries to Playground after the project is up and running.
       }
     reviews {
       username
-      rating
+      diceThrow
     }
   }
 }
