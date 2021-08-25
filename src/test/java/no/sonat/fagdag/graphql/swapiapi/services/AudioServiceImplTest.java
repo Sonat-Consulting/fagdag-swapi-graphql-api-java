@@ -1,5 +1,6 @@
 package no.sonat.fagdag.graphql.swapiapi.services;
 
+import no.sonat.fagdag.graphql.swapiapi.models.Audio;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -11,7 +12,9 @@ class AudioServiceImplTest {
     @Test
     void play() {
         AudioServiceImpl audioService = new AudioServiceImpl();
-        audioService.play(new File("src/main/resources/wav/R2D2-do.wav"), 0);
+        Audio audio = audioService.playRandom();
 
+        assert(audio != null);
+        assert(audio.getDescription() != null);
     }
 }

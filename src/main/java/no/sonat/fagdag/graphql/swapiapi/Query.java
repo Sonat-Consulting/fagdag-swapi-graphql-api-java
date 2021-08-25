@@ -25,7 +25,7 @@ class Query implements GraphQLQueryResolver {
         return CompletableFuture.supplyAsync(() -> swapiClient.getFilm(filmId));
     }
 
-    CompletableFuture<List<Film>> getAllFilms() {
+    CompletableFuture<List<Film>> getFilms() {
         return CompletableFuture.supplyAsync(() -> swapiClient.getFilms());
     }
 
@@ -34,6 +34,8 @@ class Query implements GraphQLQueryResolver {
     }
 
     CompletableFuture<Audio> getAudio() {
-        return CompletableFuture.supplyAsync(() -> audioService.playRandom());
+
+        return CompletableFuture.supplyAsync(() -> audioService.playRandom()
+        );
     }
 }

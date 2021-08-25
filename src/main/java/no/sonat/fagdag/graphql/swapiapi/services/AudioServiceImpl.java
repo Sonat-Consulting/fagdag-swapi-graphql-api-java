@@ -1,6 +1,5 @@
 package no.sonat.fagdag.graphql.swapiapi.services;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jdk.jfr.internal.tool.Main;
 import lombok.SneakyThrows;
 import no.sonat.fagdag.graphql.swapiapi.models.Audio;
 import org.springframework.stereotype.Component;
@@ -21,7 +20,7 @@ public class AudioServiceImpl implements AudioService {
         Random random = new Random();
 
         ObjectMapper mapper = new ObjectMapper();
-        InputStream is = Main.class.getResourceAsStream("/wav/sounds.json");
+        InputStream is = this.getClass().getResourceAsStream("/wav/sounds.json");
         Audio[] audios = mapper.readValue(is, Audio[].class);
 
         Audio audio = audios[random.nextInt(audios.length)];
@@ -71,7 +70,7 @@ public class AudioServiceImpl implements AudioService {
         Random random = new Random();
 
         ObjectMapper mapper = new ObjectMapper();
-        InputStream is = Main.class.getResourceAsStream("/wav/sounds.json");
+        InputStream is = this.getClass().getResourceAsStream("/wav/sounds.json");
         Audio[] audios = mapper.readValue(is, Audio[].class);
 
         Audio audio = audios[random.nextInt(audios.length)];

@@ -13,7 +13,7 @@ type Query {
     """
     Show all films/episodes
     """
-    allFilms: [Film!]
+    films: [Film!]
     """
     Show a Vehicle based off an ID
     """
