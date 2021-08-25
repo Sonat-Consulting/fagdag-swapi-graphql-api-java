@@ -13,7 +13,7 @@ spring:
     async:
       request-timeout: 10000
 server:
-  port: 9001
+  port: 9000
 management:
   endpoints:
     web:
