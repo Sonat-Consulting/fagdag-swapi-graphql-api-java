@@ -28,7 +28,7 @@ Add these queries to Playground after the project is up and running.
 ```
 # All films with reviews
 {
-  allFilms {
+  films {
     episodeId
     title
     reviews {
