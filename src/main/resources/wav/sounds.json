@@ -1,10 +1,34 @@
 [
   {
-  "path": "src/main/resources/wav/blaster-firing.wav",
-  "description": "Blaster firing"
+    "path": "src/main/resources/wav/blaster-firing.wav",
+    "description": "Blaster firing"
   },
   {
     "path": "src/main/resources/wav/R2D2-do.wav",
     "description": "R2D2 says do"
+  },
+  {
+    "path": "src/main/resources/wav/chat4.wav",
+    "description": "Robotic mouse"
+  },
+  {
+    "path": "src/main/resources/wav/Wookie.wav",
+    "description": "Chewbacca"
+  },
+  {
+    "path": "src/main/resources/wav/YODA3.wav",
+    "description": "Yoda laughing"
+  },
+  {
+    "path": "src/main/resources/wav/JABBALAF.wav",
+    "description": "Jabba laughing"
+  },
+  {
+    "path": "src/main/resources/wav/sw-r2d2talk.wav",
+    "description": "R2D2 smalltalk"
+  },
+  {
+    "path": "src/main/resources/wav/R2D2-yeah.wav",
+    "description": "R2D2 yeah"
   }
 ]

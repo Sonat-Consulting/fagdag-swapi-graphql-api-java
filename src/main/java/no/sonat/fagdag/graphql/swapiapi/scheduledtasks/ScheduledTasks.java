@@ -1,9 +1,6 @@
 package no.sonat.fagdag.graphql.swapiapi.scheduledtasks;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Objects;
-
 import no.sonat.fagdag.graphql.swapiapi.services.SwapiClientImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

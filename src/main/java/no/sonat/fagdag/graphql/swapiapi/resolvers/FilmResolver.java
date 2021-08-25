@@ -4,7 +4,6 @@ import graphql.kickstart.tools.GraphQLResolver;
 import no.sonat.fagdag.graphql.swapiapi.models.*;
 import no.sonat.fagdag.graphql.swapiapi.services.FakeReviewClient;
 import no.sonat.fagdag.graphql.swapiapi.services.SwapiClient;
-import no.sonat.fagdag.graphql.swapiapi.services.SwapiClientImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

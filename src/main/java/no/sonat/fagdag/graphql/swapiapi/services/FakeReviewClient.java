@@ -1,18 +1,8 @@
 package no.sonat.fagdag.graphql.swapiapi.services;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
-import no.sonat.fagdag.graphql.swapiapi.models.Film;
 import no.sonat.fagdag.graphql.swapiapi.models.Review;
-import no.sonat.fagdag.graphql.swapiapi.models.Vehicle;
-import org.jetbrains.annotations.NotNull;
-import org.springframework.http.*;
-import org.springframework.web.client.RestTemplate;
-
 import java.util.*;
-
-import static java.util.Collections.replaceAll;
-import static java.util.Collections.singletonList;
 
 public class FakeReviewClient {
 

@@ -67,14 +67,7 @@ public class AudioServiceImpl implements AudioService {
     @SneakyThrows
     @Override
     public void run() {
-        Random random = new Random();
-
-        ObjectMapper mapper = new ObjectMapper();
-        InputStream is = this.getClass().getResourceAsStream("/wav/sounds.json");
-        Audio[] audios = mapper.readValue(is, Audio[].class);
-
-        Audio audio = audios[random.nextInt(audios.length)];
-        this.play(new File(audio.getPath()), 0);
+        this.playRandom();
     }
 
 }

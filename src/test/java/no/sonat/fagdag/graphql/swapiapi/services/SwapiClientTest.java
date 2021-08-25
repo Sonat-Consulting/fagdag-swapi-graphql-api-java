@@ -25,8 +25,8 @@ class SwapiClientTest {
     void getFilms() {
         List<Film> filmList= swapiClientImpl.getFilms();
 
+        assertNotNull(filmList);
         assert(filmList.size() >= 1);
-
     }
 
 
