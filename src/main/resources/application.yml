@@ -2,7 +2,7 @@ swapi:
   films: https://swapi.dev/api/films/%d/
 spring:
   application:
-    name: graphql-todo-app
+    name: graphql-swapi-api
   servlet:
     multipart:
       enabled: true
