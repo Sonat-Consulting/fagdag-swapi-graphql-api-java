@@ -43,7 +43,91 @@ _We will query the server with GraphQL queries_
 ## Assignment 2
 We will fill in code to get the GraphQL API to work as it did in assignment 1.
 
-Before we continue, please change branch
+**_Before we continue, please change branch_**
 ```
 git branch del-2
+```
+
+
+
+
+
+
+### Example queries
+Add these queries to Playground after the project is up and running.
+```
+# All films with reviews
+{
+  films {
+    episodeId
+    title
+    reviews {
+      username
+      diceThrow
+    }
+  }
+}
+```
+
+
+```
+#Film episode 4 with review
+{
+  film(id: 4) {
+    episodeId,
+    title,
+    openingCrawl,
+    director,
+    producer,
+    releaseDate,
+    reviews {
+      username
+      diceThrow
+    }
+  }
+}
+```
+
+
+```
+#Film episode 4 with vehicle and review
+{
+  film(id: 4) {
+    episodeId,
+    title,
+    openingCrawl,
+    director,
+    producer,
+    releaseDate,
+    vehicles {
+      name
+      passengers
+      cargo_capacity
+      maxAtmospheringSpeed
+      }
+    reviews {
+      username
+      diceThrow
+    }
+  }
+}
+```
+
+```
+# Vehicle with properties
+{
+  vehicle(id: 8) {
+      name
+      passengers
+      cargo_capacity
+      maxAtmospheringSpeed
+  }
+}
+```
+
+```
+# Play and describe a sound effect
+{
+audio {description}
+}
 ```
