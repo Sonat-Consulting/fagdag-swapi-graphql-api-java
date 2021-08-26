@@ -27,7 +27,7 @@ public class Film implements Serializable {
     private String director;
 
     @JsonProperty("producer")
-    private String producer;
+    private String produzer;
 
     @JsonProperty("release_date")
     private String releaseDate;

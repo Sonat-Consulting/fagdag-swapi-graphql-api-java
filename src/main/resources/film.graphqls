@@ -21,15 +21,7 @@ type Film {
     """
     Producer of the episode
     """
-    producer: String
-    """
-    Release date
-    """
-    releaseDate: String
-    """
-    List of vehicles in the episode
-    """
-    vehicles: [Vehicle!]
+    produzer: String
     """
     Reviews of the episode
     """
