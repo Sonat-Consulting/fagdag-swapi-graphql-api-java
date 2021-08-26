@@ -22,4 +22,8 @@ type Query {
     Play and show information about a random audio
     """
     audio: Audio
+    """
+    Show all reviews
+    """
+    reviews: [Review!]
 }

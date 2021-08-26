@@ -30,81 +30,20 @@ These additional references should also help you:
 * [Explore GraphQl Documentation](https://www.graphql.com/)
 * [About GraphQL Spring Boot](https://www.graphql-java-kickstart.com/spring-boot/)
 
-### Example queries
-Add these queries to Playground after the project is up and running.
-```
-# All films with reviews
-{
-  films {
-    episodeId
-    title
-    reviews {
-      username
-      diceThrow
-    }
-  }
-}
-```
+## Assignment 1
+_We will query the server with GraphQL queries_
+1. Query for all films with fields title and producer
+2. Query for all films with fields title, openingcrawl and releaseDate
+3. Query for all films with fields title, vehicles (vehicles with at least two subfields: model and manufaturer).
+4. Query for all reviews
+5. Query for film with id 3
+6. Give a name to the query from assignment 5
+7. Change the value 3 with a variable
 
+## Assignment 2
+We will fill in code to get the GraphQL API to work as it did in assignment 1.
 
+Before we continue, please change branch
 ```
-#Film episode 4 with review
-{
-  film(id: 4) {
-    episodeId,
-    title,
-    openingCrawl,
-    director,
-    producer,
-    releaseDate,
-    reviews {
-      username
-      diceThrow
-    }
-  }
-}
-```
-
-
-```
-#Film episode 4 with vehicle and review
-{
-  film(id: 4) {
-    episodeId,
-    title,
-    openingCrawl,
-    director,
-    producer,
-    releaseDate,
-    vehicles {
-      name
-      passengers
-      cargo_capacity
-      maxAtmospheringSpeed
-      }
-    reviews {
-      username
-      diceThrow
-    }
-  }
-}
-```
-
-```
-# Vehicle with properties
-{
-  vehicle(id: 8) {
-      name
-      passengers
-      cargo_capacity
-      maxAtmospheringSpeed
-  }
-}
-```
-
-```
-# Play and describe a sound effect
-{
-audio {description}
-}
+git branch del-2
 ```
