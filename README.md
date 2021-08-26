@@ -53,7 +53,7 @@ git branch del-2
 * Check the schema in Playground
 * Check the schema in Voyager
 ```
-2. Correct _produzer_ to _produzer_ 
+2. Correct _produzer_ to _producer_ 
 ```
 # Verify this query will work
 {
