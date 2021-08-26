@@ -30,6 +30,103 @@ These additional references should also help you:
 * [Explore GraphQl Documentation](https://www.graphql.com/)
 * [About GraphQL Spring Boot](https://www.graphql-java-kickstart.com/spring-boot/)
 
+## Assignment 1
+_We will query the server with GraphQL queries_
+1. Query for all films with fields title and producer
+2. Query for all films with fields title, openingcrawl and releaseDate
+3. Query for all films with fields title, vehicles (vehicles with at least two subfields: model and manufaturer).
+4. Query for all reviews 
+5. Query for film with id 3
+6. Give a name to the query from assignment 5
+7. Change the value 3 with a variable
+
+## Assignment 2
+We will fill in code to get the GraphQL API to work as it did in assignment 1.
+
+Before we continue, please change branch
+```
+git branch del-2
+```
+
+1. Change the description of _title_ to "The super title of the film" in the schema
+```
+* Check the schema in Playground
+* Check the schema in Voyager
+```
+2. Correct _produzer_ to _produzer_ 
+```
+# Verify this query will work
+{
+  films {
+    title
+    producer
+  }
+}
+```
+3. Add releaseDate to Film schema
+```
+#  Verify with this query
+{
+  films {
+    title
+    releaseDate
+  }
+}
+```
+4. Inside FilmResolver - fix the getReviews which makes this query crash: 
+```
+# Validate that this works after you have fixed the issue
+{
+  films {
+    title
+    producer
+    reviews {
+      username
+      diceThrow
+    }
+  }
+}
+```
+5. Add vehicles to film schema and fix the getVehicles in FilmResolver
+```
+# Verify with this query, if you so dare!
+{
+  films {
+    title
+    producer
+    vehicles {
+      name
+      manufacturer
+    }
+  }
+}
+```
+6. Add Reviews to Query schema so it becomes possible to fetch all reviews as a root query.
+```
+# Test with this suberb query
+{
+  reviews {
+    episodeId
+    username
+    diceThrow
+  }
+}
+```
+7. (Extra assignment) expand reviews with comments (schema, models and service)
+```
+# Example query to show off your suberp achievements in life, or - at least at the Sonat Fagdag!
+{
+  films {
+    title
+    director
+    vehicles {
+      name
+      model
+    }
+  }
+}
+```
+
 ### Example queries
 Add these queries to Playground after the project is up and running.
 ```
