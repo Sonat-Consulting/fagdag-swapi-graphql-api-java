@@ -24,9 +24,9 @@ public class SwapiClientImpl implements SwapiClient {
     private final String vehiclesUri;
 
     public SwapiClientImpl() {
-        filmsUri = "https://swapi.dev/api/films/%d/?format=json";
-        allFilmsUri = "https://swapi.dev/api/films/?format=json";
-        vehiclesUri = "https://swapi.dev/api/vehicles/%d/?format=json";
+        filmsUri = "http://192.168.74.149:8000/films/%d/?format=json";
+        allFilmsUri = "http://192.168.74.149:8000/films/?format=json";
+        vehiclesUri = "http://192.168.74.149:8000/vehicles/%d/?format=json";
     }
 
     @SneakyThrows
