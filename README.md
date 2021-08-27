@@ -106,7 +106,7 @@ git branch del-2
 # Test with this suberb query
 {
   reviews {
-    episodeId
+    id
     username
     diceThrow
   }
