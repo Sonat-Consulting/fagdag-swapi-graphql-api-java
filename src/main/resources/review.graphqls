@@ -1,11 +1,28 @@
 type Mutation {
-    createReview(id: ID!):Review
+    createReview(review: InputReview!):Review
 }
 
 """
 Review of a film/episode
 """
 type Review {
+    """
+    Episode id the review belongs to
+    """
+    id: ID!
+    """
+    Username of the reviewer
+    """
+    username: String!
+    """
+    Rating given by reviewer for given episode
+    """
+    diceThrow: ID!
+}
+
+
+# Input type for a new Comment
+input InputReview {
     """
     Episode id the review belongs to
     """

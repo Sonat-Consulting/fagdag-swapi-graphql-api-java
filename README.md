@@ -126,6 +126,18 @@ Add these queries to Playground after the project is up and running.
 ```
 
 ```
+# Multation for creating a review
+mutation {
+  createReview(review: {id: 3, username: "SontUser123", diceThrow: 6}) {
+    id
+    username
+    diceThrow
+  }
+}
+```
+
+
+```
 # Play and describe a sound effect
 {
 audio {description}
